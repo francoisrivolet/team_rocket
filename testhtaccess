@@ -1,0 +1,9 @@
+Options +FollowSymlinks
+RewriteEngin On
+RewriteRule ^accueil$ index.php [L]
+RewriteRule ^liste$ index.php?c=article&a=list [L]
+RewriteRule ^pokemon([0-9]+)$ /index.php?c=article&a=view&id=$1 [L]
+RewriteRule ^connexion$ index.php?c=users&a=connexion [L]
+RewriteRule ^inscription$ index.php?c=users&a=inscription [L]
+RewriteRule ^moncompte$ index.php?c=users&a=modify [L]
+RewriteRule ^deconnexion$ index.php?c=users&a=deconnexion [L]
